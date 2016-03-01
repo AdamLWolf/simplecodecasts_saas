@@ -2,6 +2,8 @@
       
     <%= devise_error_messages! %>
   
+    <%= hidden_field_tag 'plan', params[:plan] %>
+    
     <div class="field form-group">
 
       <%= f.label :email %><br />
@@ -50,7 +52,7 @@
   
     <div class="actions form-group">
 
-      <%= f.submit "Sign up", class: 'btn btn-success' %>
+      <%= f.submit "Sign up", class: 'btn btn-success', id: 'form-submit-btn' %>
 
     </div>
 
